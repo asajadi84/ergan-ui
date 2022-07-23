@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <title>ارگن - آموزش برنامه‌نویسی</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/sweetalert2@11.js"></script>
+</head>
+
+<body>
+
+    <section class="container header">
+        <div class="d-flex justify-content-between">
+            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                <div class="d-flex flex-row">
+                    <div class="p-2 align-self-center" style="padding-right: 0 !important;"><img src="icons/logo.svg" alt="logo" class="header-logo"></div>
+                    <div class="p-2 align-self-center">
+                        <form action="/Archive" method="get">
+                            <input type="text" name="q" class="header-search-box" placeholder="چی میخوای یاد بگیری...؟!">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 align-self-center">
+                <div class="d-flex flex-row">
+                    <div class="p-2 align-self-center">
+                        <div class="badged-button">
+                            <a class="second-button" href="/UserPanel"><img src="icons/cart.svg" class="button-icon-solo"></a>
+                            <span class="button-badge">21</span>
+                        </div>
+                    </div>
+                    <div class="p-2 align-self-center">
+                        <a class="first-button" href="/Login">ورود / ثبت نام
+                            <span><img src="icons/user.svg" class="button-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr style="color: #dee0e6; background-color:#dee0e6; height: 2px;">
+
+    <section class="container nav-section">
+        <a href="/link1" class="navbar-link">صفحه اصلی</a>
+        <span class="course-link">
+            <a href="/link2" class="navbar-link">دوره‌ها
+                <span><img src="icons/course-arrow.svg" width="12px"></span>
+            </a>
+            <div class="courses-menu-container">
+                <div class="courses-menu">
+                    <a href="/link21" class="courses-menu-navbar-link">جاوا اسکریپت</a>
+                    <a href="/link22" class="courses-menu-navbar-link">سی شارپ</a>
+                    <a href="/link23" class="courses-menu-navbar-link">کاتلین</a>
+                    <a href="/link24" class="courses-menu-navbar-link">ری اکت</a>
+                </div>
+            </div>
+        </span>
+        <a href="/link3" class="navbar-link">مدرسین</a>
+        <a href="/link4" class="navbar-link">همکاری با ارگن</a>
+        <a href="/link5" class="navbar-link">مقالات</a>
+        <a href="/link6" class="navbar-link">درباره ما</a>
+        <a href="/link7" class="navbar-link">تماس با ما</a>
+    </section>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-7" style="padding-right: 0;">
+                    <div class="hero-box-1">
+                        <p class="hero-title" style="margin-bottom: 64px;">داستان <span style="color: #2655f8;">برنامه‌نویس</span> شدنت از اینجا شروع میشه</p>
+                        <p class="hero-subtitle">یادگیری برنامه‌نویسی آرزو نیست، فقط نیاز هست تلاش و تمرین داشته باشید،</p>
+                        <p class="hero-subtitle" style="margin-bottom: 64px;">بقیه‌اش با ارگن.</p>
+
+                        <a class="first-button" href="/Login">همین الان شروع کن
+                            <span><img src="icons/btn-arrow.svg" class="button-icon"></span>
+                        </a>
+
+                        <img src="icons/hero-arrow.svg" class="hero-box-1-arrow">
+
+                        <div class="d-flex flex-row" style="margin-top: 64px;">
+                            <div class="p-2 align-self-center">
+                                <img src="icons/hero-1-clock.svg" class="hero-box-1-icon">
+                            </div>
+                            <div class="p-2 align-self-center">
+                                <p class="hero-box-1-description">2200 ساعت آموزش</p>
+                            </div>
+                            <div class="p-2 align-self-center">
+                                <img src="icons/hero-1-teacher.svg" class="hero-box-1-icon">
+                            </div>
+                            <div class="p-2 align-self-center">
+                                <p class="hero-box-1-description">25 مدرس</p>
+                            </div>
+                            <div class="p-2 align-self-center">
+                                <img src="icons/hero-1-student.svg" class="hero-box-1-icon">
+                            </div>
+                            <div class="p-2 align-self-center">
+                                <p class="hero-box-1-description">1200 دانشجو</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-5" style="padding-left: 0; margin-top: 64px;">
+                    <img src="img/hero-1-pic.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container course-section">
+        <div class="d-flex justify-content-between">
+            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                <div class="course-section-title">دوره‌های جدید</div>
+            </div>
+            <div class="p-2 align-self-center">
+                <a class="course-section-link" href="/viewall">دیدن همه
+                    <span style="margin-right: 16px;"><img src="icons/view-all.svg"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap">
+            <div class="course-box-container">
+
+                <div class="course-box">
+                    <a href="/course1">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c1.png">
+                        </div>
+                        <p class="course-box-title">آموزش فتوشاپ مقدماتی 2022</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <div class="d-flex flex-row" style="padding-left: 0 !important;">
+                                    <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                        <p class="course-box-price-new">رایگان</p>
+                                    </div>
+                                    <div class="p-2 align-self-center" style="padding-left: 12px !important;">
+                                        <p class="course-box-price-old">250,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-box">
+                    <a href="/course2">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c2.png">
+                        </div>
+                        <p class="course-box-title">آموزش جامع جاوا اسکریپت</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <p class="course-box-price" style="padding-left: 12px;">250,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-box">
+                    <a href="/course3">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c3.png">
+                        </div>
+                        <p class="course-box-title">آموزش پلاگین Particle.js</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <p class="course-box-price" style="padding-left: 12px;">250,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-box">
+                    <a href="/course4">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c4.png">
+                        </div>
+                        <p class="course-box-title">آموزش پلاگین wow.js</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <p class="course-box-price" style="padding-left: 12px;">250,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-box">
+                    <a href="/course5">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c5.png">
+                        </div>
+                        <p class="course-box-title">آموزش بوت استرپ</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <p class="course-box-price" style="padding-left: 12px;">250,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-box">
+                    <a href="/course6">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c6.png">
+                        </div>
+                        <p class="course-box-title">آموزش پلاگین Particle.js</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <p class="course-box-price" style="padding-left: 12px;">250,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-box">
+                    <a href="/course7">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c7.png">
+                        </div>
+                        <p class="course-box-title">آموزش پلاگین wow.js</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <p class="course-box-price" style="padding-left: 12px;">250,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-box">
+                    <a href="/course8">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c8.png">
+                        </div>
+                        <p class="course-box-title">آموزش نصب SQL Server</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <p class="course-box-price" style="padding-left: 12px;">250,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4" style="padding-left: 0; margin-top: 48px;">
+                    <img src="img/hero-2-pic.png" class="img-fluid">
+                </div>
+                <div class="col-8" style="padding-right: 0;">
+                    <div class="hero-box-2">
+                        <p class="hero-title" style="margin-bottom: 32px;">هر آنچه که باید درباره برنامه‌نویسی وب بدانید</p>
+                        <p class="hero-subtitle" style="margin-bottom: 64px;">ارگن برگزارکننده دوره‌های رایگان برنامه‌نویسی وب</p>
+
+                        <a class="first-button" href="/courses">مشاهده همه
+                            <span><img src="icons/btn-arrow.svg" class="button-icon"></span>
+                        </a>
+
+                        <img src="icons/hero-arrow.svg" class="hero-box-2-arrow">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container course-section">
+        <div class="d-flex justify-content-between">
+            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                <div class="course-section-title">دوره‌های پیشنهادی</div>
+            </div>
+            <div class="p-2 align-self-center">
+                <a class="course-section-link" href="/viewall">دیدن همه
+                    <span style="margin-right: 16px;"><img src="icons/view-all.svg"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap">
+            <div class="course-box-container">
+
+                <div class="course-box">
+                    <a href="/course1">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c1.png">
+                        </div>
+                        <p class="course-box-title">آموزش فتوشاپ مقدماتی 2022</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <div class="d-flex flex-row" style="padding-left: 0 !important;">
+                                    <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                        <p class="course-box-price-new">رایگان</p>
+                                    </div>
+                                    <div class="p-2 align-self-center" style="padding-left: 12px !important;">
+                                        <p class="course-box-price-old">250,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-box">
+                    <a href="/course2">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c2.png">
+                        </div>
+                        <p class="course-box-title">آموزش جامع جاوا اسکریپت</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <p class="course-box-price" style="padding-left: 12px;">250,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-box">
+                    <a href="/course3">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c3.png">
+                        </div>
+                        <p class="course-box-title">آموزش پلاگین Particle.js</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <p class="course-box-price" style="padding-left: 12px;">250,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-box">
+                    <a href="/course4">
+                        <div class="course-box-image-container">
+                            <img class="course-box-image" src="testonly/c4.png">
+                        </div>
+                        <p class="course-box-title">آموزش پلاگین wow.js</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-clock.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-duration">3:25:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <img src="icons/rate.svg" style="padding-left: 12px;">
+                            </div>
+                        </div>
+
+                        <div class="course-box-divider">
+                            <hr style="color: #d4d5d8; background-color:#d4d5d8; height: 2px;">
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="padding: 16px 0;">
+                            <div class="p-2 align-self-center" style="padding: 0 !important;">
+                                <div class="d-flex flex-row">
+                                    <div class="p-2 align-self-center" style="padding-right: 0 !important; padding-left: 0 !important;">
+                                        <img src="icons/course-box-users.svg" style="padding-right: 12px;">
+                                    </div>
+                                    <div class="p-2 align-self-center">
+                                        <p class="course-box-participants">25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 align-self-center" style="padding-left: 0 !important;">
+                                <p class="course-box-price" style="padding-left: 12px;">250,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+        });
+    </script>
+
+</body>
+
+</html>

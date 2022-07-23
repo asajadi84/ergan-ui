@@ -1,0 +1,343 @@
+@font-face {
+    font-family: YekanBakh;
+    font-style: normal;
+    src: url('../fonts/YekanBakh-Regular.woff2') format('woff2'),
+    url('../fonts/YekanBakh-Regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: YekanBakhBold;
+    font-style: normal;
+    src: url('../fonts/YekanBakh-Bold.woff2') format('woff2'),
+    url('../fonts/YekanBakh-Bold.woff') format('woff')
+}
+
+@font-face {
+    font-family: YekanBakhBlack;
+    font-style: normal;
+    src: url('../fonts/YekanBakh-Black.woff2') format('woff2'),
+    url('../fonts/YekanBakh-Black.woff') format('woff')
+}
+
+@font-face {
+    font-family: YekanBakhFD;
+    font-style: normal;
+    src: url('../fonts/YekanBakhFaNum-Regular.woff2') format('woff2'),
+    url('../fonts/YekanBakhFaNum-Regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: YekanBakhBoldFD;
+    font-style: normal;
+    src: url('../fonts/YekanBakhFaNum-Bold.woff2') format('woff2'),
+    url('../fonts/YekanBakhFaNum-Bold.woff') format('woff')
+}
+
+@font-face {
+    font-family: YekanBakhBlackFD;
+    font-style: normal;
+    src: url('../fonts/YekanBakhFaNum-Black.woff2') format('woff2'),
+    url('../fonts/YekanBakhFaNum-Black.woff') format('woff')
+}
+
+body {
+    background-color: #fefdfd;
+    font-family: YekanBakh;
+}
+
+.header {
+    padding: 36px 0;
+}
+
+.header-logo {
+    width: 100px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.header-search-box {
+    background: url("../icons/search.svg") no-repeat left;
+    background-color: #ffffff;
+    background-position-x: 8px;
+    box-shadow: 0px 4px 69px rgba(0, 0, 0, 0.05);
+    border: 0;
+    border-radius: 10px;
+    padding: 12px;
+    width: 512px;
+    transition: 0.5s;
+    margin-right: 24px;
+}
+
+.header-search-box:focus {
+    box-shadow: 0px 4px 69px rgba(0, 0, 0, 0.2);
+    outline: 0;
+}
+
+.first-button {
+    background-color: #2655f8;
+    box-shadow: 0px 7px 26px rgba(38, 85, 248, 0.33);
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+    transition: 0.5s;
+}
+
+.first-button:hover {
+    background-color: #6485fa;
+    color: #ffffff;
+}
+
+.first-button:active {
+    background-color: #083bed;
+    color: #ffffff;
+}
+
+.second-button {
+    background-color: #ffffff;
+    border: 1px solid #2655f8;
+    border-radius: 10px;
+    color: #2655f8;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.button-icon {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.button-icon-solo {
+    width: 20px;
+    margin: 0 6px;
+}
+
+.badged-button {
+    position: relative;
+}
+
+.button-badge {
+    position: absolute;
+    right: -4px;
+    top: -16px;
+    font-family: YekanBakhFD;
+    color: #ffffff;
+    background-color: #34deb5;
+    padding: 2px 5px;
+    border-radius: 16px;
+}
+
+hr {
+    margin: 0;
+}
+
+.nav-section {
+    padding: 24px 0;
+}
+
+.navbar-link {
+    color: #23262f;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+.navbar-link:hover {
+    color: #2655f8;
+}
+
+.course-link {
+    position: relative;
+}
+
+.courses-menu-container {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 100;
+}
+
+.courses-menu {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 69px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding-bottom: 16px;
+    width: 256px;
+    margin-top: 16px;
+}
+
+.course-link:hover .courses-menu-container {
+    display: block;
+}
+
+.courses-menu-navbar-link {
+    color: #23262f;
+    text-decoration: none;
+    display: block;
+    padding: 16px 16px 0 16px;
+    transition: 0.5s;
+}
+
+.courses-menu-navbar-link:hover {
+    padding: 16px 24px 0 16px;
+    color: #2655f8;
+}
+
+.hero-section {
+    background-color: #f2f4fe;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.hero-box-1 {
+    padding: 128px 0;
+    position: relative;
+}
+
+.hero-box-1-arrow {
+    position: absolute;
+    width: 80px;
+    top: 350px;
+    left: 96px;
+}
+
+.hero-box-1-icon {
+    width: 48px;
+}
+
+.hero-box-1-description {
+    font-family: YekanBakhBoldFD;
+    font-size: 1.1rem;
+    margin: 0;
+    margin-left: 48px;
+}
+
+.hero-title {
+    font-family: YekanBakhBlack;
+    font-size: 2.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #6e7a95;
+    margin-bottom: 8px;
+}
+
+.course-section {
+    padding: 48px 0;
+}
+
+.course-section-title {
+    font-family: YekanBakhBold;
+    font-size: 1.4rem;
+    border-right: 4px solid #2655f8;
+    padding-right: 12px;
+}
+
+.course-section-link {
+    font-family: YekanBakhBold;
+    text-decoration: none;
+    color: #2655f8;
+    font-size: 1.1rem;
+}
+
+.course-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.course-box {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 69px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    transition: 0.5s;
+    flex: 1 1 312px;
+}
+
+.course-box:hover {
+    box-shadow: 0px 4px 69px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.course-box a {
+    text-decoration: none;
+}
+
+.course-box-image-container {
+    padding: 8px;
+}
+
+.course-box-image {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.course-box-title {
+    font-family: YekanBakhBold;
+    font-size: 1.3rem;
+    color: #23262f;
+    margin: 12px 12px 0 0;
+}
+
+.course-box-duration {
+    font-family: YekanBakhFD;
+    color: #23262f;
+    margin: 0;
+}
+
+.course-box-divider {
+    padding: 0 12px;
+}
+
+.course-box-participants {
+    font-family: YekanBakhBoldFD;
+    font-size: 1.2rem;
+    color: #23262f;
+    margin: 0;
+}
+
+.course-box-price {
+    font-family: YekanBakhBoldFD;
+    font-size: 1.3rem;
+    color: #23262f;
+    margin: 0;
+}
+
+.course-box-price-new {
+    font-family: YekanBakhBoldFD;
+    font-size: 1.3rem;
+    color: #2655f8;
+    margin: 0;
+}
+
+.course-box-price-old:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 2px solid;
+    border-color: inherit;
+    transform: rotate(-10deg);
+}
+
+.course-box-price-old {
+    position: relative;
+    font-family: YekanBakhBoldFD;
+    font-size: 1.3rem;
+    color: #a8afc0;
+    margin: 0;
+}
+
+.hero-box-2 {
+    padding: 96px 48px 96px 188px;
+    position: relative;
+}
+
+.hero-box-2-arrow {
+    position: absolute;
+    width: 80px;
+    top: 300px;
+    left: 250px;
+}
