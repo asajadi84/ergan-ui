@@ -1038,19 +1038,85 @@
         </div>
     </section>
 
-    <section class="container footer-section">
+    <section class="container upper-footer-section">
         <img src="icons/logo.svg" alt="logo" class="ergan-logo">
         <p class="footer-description">
             ارگن یک نام ترکی است به معنای یادبگیر . ارگن یک پلتفرم کاملا متفاوت در زمینه یادگیری و آموزش بوده تا بتواند برای کسب و کار , توسعه و نگهداری نرم افزار , فن آوری های جدید و مهارت های خلاقانه ای که شما به دنبال ان هستید به صورت حرفه ای آموزش ببینید. در ارگن همیشه به روز باشید
 اگر شما سعی دارید به صورت فردی برای بالا بردن مهارت های خود در جهت کسب و کار از آموزش آنلاین استفاده کنید : ارگن از بهترین گزینه های شما خواهد بود . همچنین با هزینه هایی باور نکردنی که برای دوره های خاصی در سایت گذاشته شده است می توانید به صورت حرفه ای مهارت های خود را به سطح حرفه ای برسانید. 
         </p>
 
-        <hr style="color: #dee0e6; background-color:#dee0e6; height: 2px;">
+        <hr style="color: #dee0e6; background-color:#dee0e6; height: 2px; margin-bottom: 36px;">
 
-        
+        <div class="row">
+            <div class="col-3">
+                <p class="footer-title">لینک‌های کاربردی</p>
+                <a href="/home" class="footer-link">صفحه اصلی</a>
+                <a href="/courses" class="footer-link">دوره‌ها</a>
+                <a href="/terms" class="footer-link">قوانین وبسایت</a>
+                <a href="/support" class="footer-link">پشتیبانی</a>
+            </div>
+
+            <div class="col-3">
+                <p class="footer-title">دسترسی سریع</p>
+                <a href="/q1" class="footer-link">برنامه‌نویسی وب</a>
+                <a href="/q2" class="footer-link">طراحی وب</a>
+                <a href="/q3" class="footer-link">گرافیک</a>
+                <a href="/q4" class="footer-link">بانک‌های اطلاعاتی</a>
+            </div>
+
+            <div class="col-4">
+                <p class="footer-title">اطلاعات تماس</p>
+                <div class="d-flex flex-row">
+                    <div class="p-2 align-self-start" style="padding-right: 0 !important;"><img class="footer-icon" src="icons/footer-address.svg"></div>
+                    <div class="p-2 align-self-start">
+                        <p class="footer-text">استان چهارمحال و بختیاری - شهرستان سامان - خیابان حجت - کوچه سینا - پلاک 11</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="p-2 align-self-start" style="padding-right: 0 !important;"><img class="footer-icon" src="icons/footer-phone.svg"></div>
+                    <div class="p-2 align-self-start">
+                        <a href="tel:+983833527982" class="footer-text">03833527982</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="p-2 align-self-start" style="padding-right: 0 !important;"><img class="footer-icon" src="icons/footer-email.svg"></div>
+                    <div class="p-2 align-self-start">
+                        <a href="mailto:info@ergan.ir" class="footer-text">info@ergan.ir</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <!-- enamad code -->
+                <img src="testonly/enamad.png" style="width: 125px;">
+            </div>
+        </div>
     </section>
 
-    <br><br><br><br><br><br>
+    <section class="lower-footer-section">
+        <div class="container">
+            <img src="icons/scroll-to-top.svg" alt="scroll to top" class="scroll-to-top-icon">
+
+            <div class="d-flex justify-content-between" style="margin-top: 24px;">
+                <div class="p-2 align-self-center" style="padding: 0 !important;">
+                    <p class="footer-copyright">تمامی حقوق و محتوای این سایت متعلق به ارگن می‌باشد و هرگونه کپی‌برداری غیرقانونی محسوب خواهد شد.</p>
+                </div>
+                <div class="p-2 align-self-center">
+                    <div class="d-flex flex-row">
+                        <div class="p-2 align-self-center">
+                            <a href="https://api.whatsapp.com/send?phone=989137001784" target="_blank"><img src="icons/whatsapp.svg" alt="whatsapp" class="footer-icon"></a>
+                        </div>
+                        <div class="p-2 align-self-center">
+                            <a href="https://t.me/ergangroup" target="_blank"><img src="icons/telegram.svg" alt="telegram" class="footer-icon"></a>
+                        </div>
+                        <div class="p-2 align-self-center">
+                            <a href="https://instagram.com/ergangroup" target="_blank"><img src="icons/instagram.svg" alt="instagram" class="footer-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script type="text/javascript">
         $(document).ready(function(){
@@ -1078,7 +1144,11 @@
                 });
             }
 
-            console.log();
+            $(".scroll-to-top-icon").on("click", function(){
+                window.scrollTo({top: 0, behavior: "smooth"});
+            });
+
+
         });
     </script>
 
