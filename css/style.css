@@ -49,7 +49,7 @@ body {
     padding: 36px 0;
 }
 
-.header-logo {
+.ergan-logo {
     width: 100px;
     -webkit-user-drag: none;
     user-select: none;
@@ -340,4 +340,339 @@ hr {
     width: 80px;
     top: 300px;
     left: 250px;
+}
+
+.section-title-center {
+    font-family: YekanBakhBold;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 80px 0 64px 0;
+    position: relative;
+}
+
+.section-title-center:after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 5%;
+    top: -16px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #2655f8;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 100px;
+    z-index: 1000;
+    transition: 0.2s;
+}
+
+.carousel-btn:focus {
+    outline: 0;
+}
+
+.carousel-prev {
+    transform: translate(15px, -50%);
+}
+
+.carousel-next {
+    left: 0;
+    transform: translate(-15px, -50%);
+}
+
+.slick-track {
+    margin-right: 0 !important;
+}
+
+.slick-disabled {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.slick-dots-modified
+{
+    position: absolute;
+    bottom: -55px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots-modified li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots-modified li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots-modified li button:hover,
+.slick-dots-modified li button:focus
+{
+    outline: none;
+}
+.slick-dots-modified li button:hover:before,
+.slick-dots-modified li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots-modified li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 12px;
+    height: 12px;
+
+    content: '•';
+    text-align: center;
+
+    background-color: #e9eeff;
+    border-radius: 10px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots-modified li.slick-active button:before
+{
+    background-color: #2655f8;
+}
+
+
+.reviews-layers {
+    display: grid;
+}
+
+.reviews-layer {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.review-box {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    transition: 0.5s;
+    flex: 1 1 312px;
+    margin: 0 8px;
+    padding: 48px;
+}
+
+.review-box-img {
+    width: 128px;
+    margin: 0 auto;
+}
+
+.review-box-title {
+    font-family: YekanBakhBold;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #23262f;
+    margin: 12px 0;
+}
+
+.course-box-description {
+    font-family: YekanBakhFD;
+    color: #23262f;
+    margin: 0;
+}
+
+.articles-section {
+    background-color: #2e333f;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    margin: 64px 0;
+    padding: 16px 0 64px 0;
+}
+
+.articles-section-title {
+    font-family: YekanBakhBold;
+    font-size: 1.4rem;
+    color: #ffffff;
+    border-right: 4px solid #ffffff;
+    padding-right: 12px;
+}
+
+.articles-section-link, .articles-section-link:hover {
+    font-family: YekanBakhBold;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.article-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0 8px;
+}
+
+.article-box a {
+    text-decoration: none;
+}
+
+.article-box-image-container {
+    padding: 8px;
+}
+
+.article-box-image {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.article-box-title {
+    font-family: YekanBakhBold;
+    font-size: 1.3rem;
+    color: #23262f;
+    margin: 12px 12px 0 12px;
+}
+
+.article-box-description {
+    color: #6e7a95;
+    margin: 12px 12px 0 12px;
+}
+
+.article-box-link {
+    font-family: YekanBakhBoldFD;
+    font-size: 1.3rem;
+    color: #2655f8;
+    margin: 0;
+}
+
+.faq-container {
+    padding: 16px 10%;
+}
+
+.accordion-btn {
+    background-color: #ffffff;
+    color: #23262f;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: right;
+    box-shadow: 0px 4px 69px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.accordion-btn-text {
+    margin: 0;
+}
+
+.accordion-panel {
+    display: none;
+}
+
+.accordion-content {
+    padding: 0 24px;
+    margin: 0 0 24px 0;
+}
+
+.newsletter-section {
+    background-color: #2f3542;
+    border-radius: 10px;
+    margin-top: 48px;
+}
+
+.newsletter-content {
+    padding: 96px 128px 64px 64px;
+}
+
+.newsletter-title {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: YekanBakhBold;
+}
+
+.newsletter-description {
+    color: #a8afc0;
+}
+
+.newsletter-email-field {
+    background-color: #ffffff;
+    border: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 12px;
+    width: 512px;
+}
+
+.newsletter-btn-container {
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.newsletter-btn {
+    background-color: #2655f8;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 4px 32px;
+    margin: 8px;
+    transition: 0.5s;
+    border: 0;
+    font-size: 0.8rem;
+    height: 32px;
+}
+
+.first-button:hover {
+    background-color: #6485fa;
+    color: #ffffff;
+}
+
+.first-button:active {
+    background-color: #083bed;
+    color: #ffffff;
+}
+
+.footer-section {
+    padding: 64px 0;
+}
+
+.footer-description {
+    font-size: 0.8rem;
+    margin: 24px 0 48px 0;
 }
